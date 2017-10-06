@@ -12,3 +12,13 @@ while counter < 21 do
 end
 
 puts random_numbers
+
+# OR ANOTHER WAY TO DO THIS....
+random_numbers2 = Array.new
+
+20.times do |i|
+    random = prng.rand(0..49)
+    random_numbers2.push(random**2)
+end
+
+puts random_numbers2
